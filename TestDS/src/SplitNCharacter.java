@@ -11,5 +11,15 @@ public class SplitNCharacter {
 		 			}
 		 			return parts.toArray(new String[0]);
     }
+	
+	public static int split(String text , int size) {
+		   String[]  a  = splitToNChar("SMS messages are really short", 12);
+			System.out.println(Arrays.toString(a));
+			if(a.length <= 0) {
+				return -1;
+			} else {
+				return a.length;
+			}
+	 }
 
 }
